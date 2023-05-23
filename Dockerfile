@@ -1,5 +1,5 @@
 # build from the Ubuntu 18.04 image
-FROM ubuntu:20.10
+FROM ubuntu:18.04
 
 # create the mssql user
 RUN useradd -u 10001 mssql
