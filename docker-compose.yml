@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  identity-database:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1433:1433"
+    env_file:
+      - .env
+    volumes:
+      - sql_system:/var/opt/mssql/
+      - sql_data:${MSSQL_DATA_DIR}
+      - sql_log:${MSSQL_LOG_DIR}
+      - sql_backup:${MSSQL_BACKUP_DIR}
+
+
+volumes:
+  sql_system:
+  sql_data:
+  sql_log:
+  sql_backup:
