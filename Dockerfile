@@ -8,7 +8,7 @@ WORKDIR /usr/config
 COPY . /usr/config
 
 # Grant permissions for to our scripts to be executable
-RUN sudo chmod +x /usr/config/entrypoint.sh
-RUN sudo chmod +x /usr/config/configure-db.sh
+RUN sudo chmod +x /usr/config/entry_point.sh
+RUN sudo chmod +x /usr/config/configure-db-2.sh
 
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["./entry_point.sh"]
