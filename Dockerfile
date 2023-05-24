@@ -1,5 +1,7 @@
 FROM mcr.microsoft.com/mssql/server:2022-latest
 
+USER root
+
 # Create a config directory
 RUN mkdir -p /usr/config
 WORKDIR /usr/config
