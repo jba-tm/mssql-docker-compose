@@ -8,3 +8,5 @@ services:
       - "${MSSQL_PORT}:1433"
     env_file:
       - .env
+    volumes:
+      - ./data:/var/opt/sqlserver/data
