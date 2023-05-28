@@ -3,8 +3,11 @@ FROM mcr.microsoft.com/mssql/server:2017-latest
 USER root
 
 # Create a config directory
+RUN mkdir -p /user/data
 RUN mkdir -p /usr/config
 WORKDIR /usr/config
+
+
 
 # Bundle config source
 COPY . /usr/config
