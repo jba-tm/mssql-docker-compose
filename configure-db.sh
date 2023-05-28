@@ -24,8 +24,8 @@ fi
 # Run the setup script to create the DB and the schema in the DB
 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $MSSQL_SA_PASSWORD -d master -i setup.sql
 
-#/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $MSSQL_SA_PASSWORD -Q "SELECT name, database_id, create_date
-#FROM sys.databases;
-#GO  "
+/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $MSSQL_SA_PASSWORD -Q "SELECT name, database_id, create_date
+FROM sys.databases;
+GO  "
 
 

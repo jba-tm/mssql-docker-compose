@@ -9,4 +9,4 @@ services:
     env_file:
       - .env
     volumes:
-      - ./data:/user/data
+      - ./data:/var/opt/mssql/data
