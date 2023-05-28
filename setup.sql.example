@@ -5,4 +5,6 @@ Enter custom T-SQL here that would run after SQL Server has started up.
 */
 
 CREATE DATABASE change_this;
+USE change_this;
+EXEC sp_changedbowner 'sa';
 GO
