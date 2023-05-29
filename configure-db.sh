@@ -26,6 +26,4 @@ fi
 
 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P "$MSSQL_SA_PASSWORD" -Q "SELECT name, database_id, create_date
 FROM sys.databases;
-GO  "
-
-
+GO"

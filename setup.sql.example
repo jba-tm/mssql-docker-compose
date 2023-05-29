@@ -11,3 +11,8 @@ GO
 # USE change_this;
 # EXEC sp_changedbowner 'sa';
 # GO
+
+
+# CREATE DATABASE [DatabaseName]
+#  ON (FILENAME = 'path\to\your\Database.mdf')
+#  FOR ATTACH_REBUILD_LOG;
